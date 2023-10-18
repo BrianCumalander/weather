@@ -6,7 +6,7 @@ form.addEventListener('submit', async function (e) {
   const res = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${searchTerm},us&appid=${apikey}&units=imperial`);
   console.log(res.data);
   showWeather(res.data) // calls the function (below) to display the data. --res is short for result
-  form.elements.cityQuery.value = ""; // clear the search  box 
+  form.elements.cityQuery.value = ""; // clear the search box 
 })
 
 
